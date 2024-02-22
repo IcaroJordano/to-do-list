@@ -1,0 +1,137 @@
+body{
+    display: flex;
+    background-color: rgb(33, 33, 48);
+    justify-content: center;
+}
+#principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    width: 75%;
+    height: 555px;
+    border-radius:3%;
+    box-shadow: rgba(95, 91, 91, 0.712) 0px 0px 65px;
+}
+h1{
+    color: aliceblue;
+    margin-top: 7%;
+    margin-bottom: 2%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 34px;
+}
+#entrada{
+    display: flex;
+    width: 81%;
+    height: 7%;
+    background-color: aliceblue;
+    border-radius:45px;
+
+}
+input{
+    background-color: aliceblue;
+    border-radius:45px;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    border-right: 0ch;
+    width: 85%;
+    text-decoration: none;
+    outline: none;
+    font-size:large;
+    padding-left: 2%;
+}
+textarea, input, select{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+#imagem{
+
+    margin-left:5%; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 9px;
+    width: 6%;
+    border-top-right-radius: 17px;
+    border-bottom-right-radius: 17px;
+}
+img:hover{
+    opacity: 0.7;
+}
+img{
+    width: 33px;
+    height: 33px;
+    border-radius: 45px;
+}
+#lista{
+    margin-top: 3%;
+    display: flex;
+    width: 78%;
+    height:75%;
+    border-radius: 2%;
+    overflow:auto;
+    flex-direction: column;
+}
+#lista::-webkit-scrollbar{
+    width: 5px;
+}
+#lista::-webkit-scrollbar-thumb{
+    border-radius: 45px;
+    background-color: rgb(66, 65, 90);
+}
+#item{
+    background-color: rgba(65, 65, 83, 0.61);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1px;
+    border-radius: 2%;
+    
+}
+p{
+    padding-left: 4%;
+    display: flex;
+    width: 85%;
+    height: 99%;
+    align-items: center;
+    word-break:break-all;
+    color:rgb(182, 182, 182);
+}
+#lixeira{
+    border: none;
+    display: flex;
+    border-radius: 45px;
+    justify-content: center;
+    align-items: center;
+    width: 33px;
+    height: 33px;
+    margin-right: 3%;
+}
+#lixeira:hover{
+    opacity:0.8;
+}
+@media (min-width:624px){
+    #principal{
+        width :61%;
+        margin-top: 3%;
+        height: 556px;
+        border-radius: 2%;
+        align-items:flex-start;
+    }
+    h1{
+        margin-top: 3%;
+        margin-left: 5%;
+    }
+    #entrada{
+        margin-left: 5%;
+        width: 30%;
+    }
+    #lista{
+        margin-left: 5%;
+        height: 395px;
+        box-shadow: rgba(5, 4, 4, 0.199) 0px 0px 5px;
+
+    }
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST</title>
+    <link rel="icon" href="imagens/titulo.png">
+</head>
+<body onload="carregar() ">
+    <div id="principal">
+        <h1>To Do List</h1>
+        <div id="entrada">
+            <input id="input" type="text" placeholder="white here..." >
+            <div id="imagem" 
+            keypress="verificar(event)" onclick="adicionar()">
+                <img src="imagens/adicionar.png" alt="">
+            </div>
+        </div>
+        
+        <div id="lista">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
